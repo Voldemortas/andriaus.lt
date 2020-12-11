@@ -30,4 +30,4 @@ jobs:
         uses: satak/webrequest-action@master
         with:
           url: https://andriaus.lt/api/deploy
-          method: GET
+          method: POST
