@@ -5,14 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prod": "pm2 start --watch"
   },
   "dependencies": {
     "next": "10.0.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
-  "devDependencies": {
+    "react-dom": "17.0.1",
     "@babel/preset-typescript": "^7.12.7",
     "@types/node": "^14.14.12",
     "@types/react": "^17.0.0",
