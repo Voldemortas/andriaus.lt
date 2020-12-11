@@ -10,7 +10,9 @@ export default function Home() {
       </Head>
 
       <header>
-        <h1 className={styles.title}>Welcome</h1>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://andriaus.lt">Andriaus.lt</a>
+        </h1>
       </header>
       <main className={styles.main}>Main text</main>
 

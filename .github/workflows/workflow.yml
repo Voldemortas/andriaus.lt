@@ -3,31 +3,31 @@ name: Node CI
 on: [push]
 
 jobs:
-#  test:
-#    runs-on: ubuntu-latest
-#
-#    strategy:
-#      matrix:
-#        node-version: [14.x]
-#
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Use Node.js ${{ matrix.node-version }}
-#        uses: actions/setup-node@v1
-#        with:
-#          node-version: ${{ matrix.node-version }}
-#      - run: yarn install --frozen-lockfile
-#      - run: yarn test    
-    
+  #  test:
+  #    runs-on: ubuntu-latest
+  #
+  #    strategy:
+  #      matrix:
+  #        node-version: [14.x]
+  #
+  #    steps:
+  #      - uses: actions/checkout@v2
+  #      - name: Use Node.js ${{ matrix.node-version }}
+  #        uses: actions/setup-node@v1
+  #        with:
+  #          node-version: ${{ matrix.node-version }}
+  #      - run: yarn install --frozen-lockfile
+  #      - run: yarn test
+
   deploy:
     runs-on: ubuntu-latest
-    
+
     if: ${{ github.ref == 'main' }}
-#    needs: test
-    
+    #    needs: test
+
     steps:
-    - uses: actions/checkout@master
-    - name: curl
-      uses: wei/curl@v1
-      with:
-        args: https://andriaus.lt/api/github
+      - uses: actions/checkout@master
+      - name: curl
+        uses: wei/curl@v1
+        with:
+          args: https://andriaus.lt/api/deploy
