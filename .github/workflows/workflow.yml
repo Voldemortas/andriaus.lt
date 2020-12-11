@@ -22,12 +22,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    if: ${{ github.ref == 'main' }}
+    if: github.ref == 'refs/heads/main'
     #    needs: test
 
     steps:
-      - uses: actions/checkout@master
-      - name: curl
-        uses: wei/curl@v1
+      - name: Deploy
+        uses: satak/webrequest-action@master
         with:
-          args: https://andriaus.lt/api/deploy
+          url: https://andriaus.lt/api/deploy
+          method: GET
