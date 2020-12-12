@@ -1,0 +1,57 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+}
+
+.animate {
+  animation-duration: 1s;
+  width: 0%;
+  overflow: hidden;
+  text-align: center;
+  &-left {
+    animation-name: slidein-left;
+    animation-fill-mode: forwards;
+  }
+  &-right {
+    animation-name: slidein-right;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes slidein-left {
+  from {
+    width: 0;
+    text-align: left;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slidein-right {
+  from {
+    width: 0;
+    text-align: right;
+    margin-left: 100%;
+  }
+  to {
+    width: 100%;
+    margin-left: 0;
+  }
+}
