@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #fafafa;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -15,13 +18,11 @@ a {
   box-sizing: border-box;
 }
 
-main {
-  width: 100%;
-}
-
 .animate {
+  position: relative;
   animation-duration: 1s;
-  width: 0%;
+  width: 100%;
+  left: -100%;
   overflow: hidden;
   text-align: center;
   &-left {
@@ -34,24 +35,72 @@ main {
   }
 }
 
+.block {
+  text-align: center;
+
+  @media (min-width: 400px) {
+    max-width: 1000px;
+    margin-left: calc(50% - 500px + 50px);
+    margin-right: calc(50% - 500px + 50px);
+  }
+}
+a {
+  color: #2277cc;
+  &:hover {
+    color: #2277dd;
+    text-decoration: underline;
+  }
+}
+main {
+  align-self: center;
+  width: 100%;
+  .animate {
+    .info-box {
+      font-size: 14pt;
+      margin-bottom: 50px;
+      background-color: #f0f0f0;
+      article {
+        text-align: justify;
+        padding: 0 30px 0 30px;
+        text-indent: 20px;
+      }
+      @media (min-width: 401px) {
+        display: grid;
+        grid-template:
+          'header header image'
+          'article article image'
+          'footer footer image';
+        header {
+          grid-area: header;
+        }
+        footer {
+          grid-area: footer;
+        }
+        article {
+          grid-area: article;
+        }
+        img {
+          grid-area: image;
+        }
+      }
+    }
+  }
+}
+
 @keyframes slidein-left {
   from {
-    width: 0;
-    text-align: left;
+    left: -100%;
   }
   to {
-    width: 100%;
+    left: 0;
   }
 }
 
 @keyframes slidein-right {
   from {
-    width: 0;
-    text-align: right;
-    margin-left: 100%;
+    left: 100%;
   }
   to {
-    width: 100%;
-    margin-left: 0;
+    left: 0;
   }
 }
