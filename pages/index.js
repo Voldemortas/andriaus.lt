@@ -51,7 +51,8 @@ export default function Home() {
               warehouse/eshop administration side. The project has no back end
               and uses localstorage to store all the data. Although, there is no
               real database/back end, the proeject still makes pseudo API calls
-              to simulated database and not-instant response times.
+              to simulated database and not-instant response times. The project
+              uses React together with Typescript.
             </SliderArticle>
           </SideSlide>
           <SideSlide leftSlide={true}>
@@ -85,7 +86,8 @@ export default function Home() {
               <a href="https://discordapp.com/oauth2/authorize?client_id=673301008075456542&scope=bot&permissions=67584">
                 invitation link
               </a>{' '}
-              to invite it to your own server.
+              to invite it to your own server. The project was made with the
+              help of <a href="https://discord.js.org/">discord.js</a>.
               <br />
               <br />
               <br />
