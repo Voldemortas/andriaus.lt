@@ -5,10 +5,11 @@ const SliderArticle = () => {
   return (
     <header className="contact-info">
       <article className="contact-info--intro">
-        Hello, I'm Andrius Simanaitis. I'm currently studying at Kaunas
-        Technology University. My main focus is the Front End development yet I
-        have some experience in creating Back End with PHP and NodeJS Express as
-        well as creating bots for Discord.
+        Hello, I'm Andrius Simanaitis. I am in the final year of my software
+        engineering bachelor degree at Kaunas Technology University. My main
+        focus is the Front End development yet I have some experience in
+        creating Back End with PHP and NodeJS Express as well as creating bots
+        for Discord.
       </article>
       <br />
       <img
@@ -37,10 +38,13 @@ const SliderArticle = () => {
         Technologies I have worked with:
         <br />
         <br />
+        <img src="git.png" alt="git" title="git" />
         <img src="javascript.png" alt="javascript" title="javascript" />
-        <img src="typescript.webp" alt="typescript" title="typescript" />
-        <img src="sass.png" alt="sass" title="sass" />
+        <img src="php.png" alt="php" title="php" />
         <img src="react.png" alt="react" title="react" />
+        <img src="sass.png" alt="sass" title="sass" />
+        <img src="typescript.webp" alt="typescript" title="typescript" />
+        <img src="vue.png" alt="vue.js" title="vue.js" />
       </div>
     </header>
   )
