@@ -14,7 +14,12 @@ const SliderArticle = ({ title, url, children, image, repo }: properties) => {
         <h2>{title}</h2>
       </header>
       <a href={image} className="image-url">
-        <img src={image} width="320"></img>
+        <img
+          src={image}
+          width="320"
+          alt={`preview of ${title}`}
+          title={`preview of ${title}`}
+        ></img>
       </a>
       <article>{children}</article>
       <br />

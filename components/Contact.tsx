@@ -7,7 +7,7 @@ const SliderArticle = () => {
       <article className="contact-info--intro">
         Hello, I'm Andrius Simanaitis. I'm currently studying at Kaunas
         Technology University. My main focus is the Front End development yet I
-        have some experience in creating Back Eng with PHP or NodeJS Express as
+        have some experience in creating Back Eng with PHP and NodeJS Express as
         well as creating bots for Discord.
       </article>
       <br />

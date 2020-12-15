@@ -9,8 +9,10 @@ export default function Home() {
     <div className={styles.container}>
       <div className="block">
         <Head>
-          <title>Andriaus.lt - Andriaus Simanaičio svetainė</title>
-          <link rel="icon" href="/favicon.ico" />
+          <title>Andriaus.lt - website of Andrius Simanaitis</title>
+          <link rel="icon" href="/favicon.png" />
+          <meta name="author" content="Andrius Simanaitis" />
+          <meta name="description" content="website of Andrius Simanaitis" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -19,6 +21,7 @@ export default function Home() {
 
         <Contact />
         <main className={styles.main}>
+          <h1>My projects</h1>
           <SideSlide leftSlide={true}>
             <SliderArticle
               title="ActiveGen"
