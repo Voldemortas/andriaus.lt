@@ -1,15 +1,18 @@
 import React from 'react'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope, FaScroll } from 'react-icons/fa'
 
 const SliderArticle = () => {
   return (
     <header className="contact-info">
       <article className="contact-info--intro">
         Hello, I'm Andrius Simanaitis. I am in the final year of my software
-        engineering bachelor degree at Kaunas Technology University. My main
-        focus is the Front End development yet I have some experience in
-        creating Back End with PHP and NodeJS Express as well as creating bots
-        for Discord.
+        engineering bachelor degree at Kaunas Technology University. Even
+        though, my first public project was an Android application (later we
+        released the iOS version too) from the very beginning I was also working
+        with php. As of today I'm also familiar with node (express.js), sql,
+        nosql(mongoDb), my current passion is Frontend. In free time I love
+        learning about language I have even written a Discord bot which helps
+        learners of Lithuanian on daily basis.
       </article>
       <br />
       <img
@@ -33,6 +36,11 @@ const SliderArticle = () => {
             <FaEnvelope /> eragonas5@gmail.com
           </a>
         </li>
+        <li>
+          <a href="/CV.pdf">
+            <FaScroll /> Curriculum Vitae
+          </a>
+        </li>
       </ul>
       <div className="contact-info--technologies">
         Technologies I have worked with:
@@ -42,6 +50,7 @@ const SliderArticle = () => {
         <img src="javascript.png" alt="javascript" title="javascript" />
         <img src="php.png" alt="php" title="php" />
         <img src="react.png" alt="react" title="react" />
+        <img src="reactnative.png" alt="react native" title="react native" />
         <img src="sass.png" alt="sass" title="sass" />
         <img src="typescript.webp" alt="typescript" title="typescript" />
         <img src="vue.png" alt="vue.js" title="vue.js" />

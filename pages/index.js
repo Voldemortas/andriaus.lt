@@ -21,6 +21,7 @@ export default function Home() {
 
         <Contact />
         <main className={styles.main}>
+          <h1>Academies</h1>
           <h1>My projects</h1>
           <SideSlide leftSlide={true}>
             <SliderArticle
