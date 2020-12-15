@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import SideSlide from '../components/SideSlide'
 import SliderArticle from '../components/SliderArticle'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
@@ -16,11 +17,7 @@ export default function Home() {
           />
         </Head>
 
-        <header>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://andriaus.lt">Andriaus.lt</a>
-          </h1>
-        </header>
+        <Contact />
         <main className={styles.main}>
           <SideSlide leftSlide={true}>
             <SliderArticle
