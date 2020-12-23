@@ -130,6 +130,40 @@ export default function Home() {
             </SideSlide>
             <SideSlide leftSlide={true}>
               <SliderArticle
+                title="Xplcity"
+                url="https://xplcity.andriaus.lt"
+                image="/xplcity.png"
+                repo="https://github.com/Voldemortas/xplcity"
+              >
+                <p>
+                  <b>Xplcity</b> was a small project very similar to the
+                  Warehouse one. The project was coded with VUE. Users can
+                  manage (CRUD) the list of various items and get a bill -
+                  printable version of the items without the "add/delete" type
+                  buttons.
+                </p>
+              </SliderArticle>
+            </SideSlide>
+            <SideSlide leftSlide={true}>
+              <SliderArticle
+                title="Advent of Code"
+                image="/AoC.png"
+                repo="https://github.com/Voldemortas/advent2020"
+              >
+                <p>
+                  <b>Advent of Code</b> an annual fun coding challanges event
+                  that lasts from December 1st to the Christmass. The challanges
+                  are easy in the very beginning, however, they get more
+                  challanging as days go on. You can check out the challanges on{' '}
+                  <a href="https://adventofcode.com/2020">
+                    Advent of Code website
+                  </a>
+                  .
+                </p>
+              </SliderArticle>
+            </SideSlide>
+            <SideSlide leftSlide={true}>
+              <SliderArticle
                 title="mortas bot"
                 url="https://discord.gg/KTR72Znp"
                 image="/mortasbot.png"
