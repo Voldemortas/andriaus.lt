@@ -5,15 +5,19 @@ const SliderArticle = () => {
   return (
     <header className="contact-info">
       <article className="contact-info--intro">
-        Hello, I'm Andrius Simanaitis. I am in the final year of my software
-        engineering bachelor degree at Kaunas Technology University. Even
-        though, my first public project was an Android application (later we
-        released the iOS version too) from the very beginning I was interested
-        in web development. I started by learning and working with php. Today
-        I'm familiar with node (express.js), sql, nosql(mongoDb), my current
-        passion is Frontend. <br />
-        In my free time I love learning about language I have even written a
-        Discord bot which helps learners of Lithuanian on daily basis.
+        <p>
+          Hello, I'm Andrius Simanaitis. I am in the final year of my software
+          engineering bachelor degree at Kaunas Technology University. Even
+          though, my first public project was an Android application (later we
+          released the iOS version too) from the very beginning I was interested
+          in web development. I started by learning and working with php. Today
+          I'm familiar with node (express.js), sql, nosql(mongoDb), my current
+          passion is Frontend.{' '}
+        </p>
+        <p>
+          In my free time I love learning about language I have even written a
+          Discord bot which helps learners of Lithuanian on daily basis.
+        </p>
       </article>
       <br />
       <img

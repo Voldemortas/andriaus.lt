@@ -109,6 +109,7 @@ main {
 }
 
 .contact-info {
+  padding: 5px 15px;
   margin-top: 25px;
   display: grid;
   font-size: 12pt;
@@ -181,4 +182,8 @@ main {
   article {
     text-align: justify;
   }
+}
+
+article p {
+  text-indent: 20px;
 }
