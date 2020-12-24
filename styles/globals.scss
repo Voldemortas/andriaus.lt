@@ -16,6 +16,7 @@ a {
 
 * {
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 .animate {
@@ -44,7 +45,7 @@ a {
   }
 }
 a {
-  color: #2277cc;
+  color: #2274cc;
   &:hover {
     color: #2277dd;
     text-decoration: underline;

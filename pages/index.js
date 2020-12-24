@@ -16,7 +16,7 @@ export default function Home() {
           <meta name="description" content="website of Andrius Simanaitis" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
           />
         </Head>
 
