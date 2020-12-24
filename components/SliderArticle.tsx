@@ -33,12 +33,6 @@ const SliderArticle = ({ title, url, children, image, repo }: properties) => {
               src={`${image.match(/(.+)\.gif$/)[1]}.mp4`}
               type="video/mp4"
             />
-            <img
-              src={image}
-              width="320"
-              alt={`preview of ${title}`}
-              title={`preview of ${title}`}
-            />
           </video>
         )}
       </span>
