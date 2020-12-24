@@ -147,7 +147,7 @@ export default function Home() {
             <SideSlide leftSlide={true}>
               <SliderArticle
                 title="Advent of Code"
-                image="/AoC.png"
+                image="/AoC.webp"
                 repo="https://github.com/Voldemortas/advent2020"
               >
                 <p>
@@ -166,7 +166,7 @@ export default function Home() {
               <SliderArticle
                 title="mortas bot"
                 url="https://discord.gg/KTR72Znp"
-                image="/mortasbot.png"
+                image="/mortasbot.webp"
                 repo="https://github.com/Voldemortas/botas"
               >
                 <p>

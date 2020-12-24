@@ -20,7 +20,7 @@ const SliderArticle = () => {
       </article>
       <br />
       <img
-        src="face.png"
+        src="face.webp"
         className="contact-info--image"
         alt="personal picture"
       />
