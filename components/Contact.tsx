@@ -71,7 +71,7 @@ const SliderArticle = () => {
         />
         <img src="sass.png" alt="sass" title="sass" width="32" height="32" />
         <img
-          src="typescript.webp"
+          src="typescript.png"
           alt="typescript"
           title="typescript"
           width="32"
