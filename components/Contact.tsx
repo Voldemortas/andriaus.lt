@@ -32,12 +32,12 @@ const SliderArticle = () => {
         </li>
         <li>
           <a href="https://github.com/Voldemortas">
-            <FaGithub /> github.com/Voldemortas
+            <FaGithub className="hideable-icon" /> github.com/Voldemortas
           </a>
         </li>
         <li>
           <a href="mailto:eragonas5@gmail.com">
-            <FaEnvelope /> eragonas5@gmail.com
+            <FaEnvelope className="hideable-icon" /> eragonas5@gmail.com
           </a>
         </li>
         <li>

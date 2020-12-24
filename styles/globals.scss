@@ -125,6 +125,12 @@ main {
       'image intro'
       'links technologies';
   }
+  .hideable-icon {
+    display: none;
+    @media (min-width: 500px) {
+      display: inline;
+    }
+  }
   .contact-info--image {
     grid-area: image;
     @media (min-width: 500px) {
