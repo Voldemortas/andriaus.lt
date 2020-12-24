@@ -23,6 +23,8 @@ const SliderArticle = () => {
         src="face.webp"
         className="contact-info--image"
         alt="personal picture"
+        width="105"
+        height="113"
       />
       <ul className="contact-info--links">
         <li>
@@ -50,14 +52,32 @@ const SliderArticle = () => {
         Technologies I have worked with:
         <br />
         <br />
-        <img src="git.png" alt="git" title="git" />
-        <img src="javascript.png" alt="javascript" title="javascript" />
-        <img src="php.png" alt="php" title="php" />
-        <img src="react.png" alt="react" title="react" />
-        <img src="reactnative.png" alt="react native" title="react native" />
-        <img src="sass.png" alt="sass" title="sass" />
-        <img src="typescript.webp" alt="typescript" title="typescript" />
-        <img src="vue.png" alt="vue.js" title="vue.js" />
+        <img src="git.png" alt="git" title="git" width="32" height="32" />
+        <img
+          src="javascript.png"
+          alt="javascript"
+          title="javascript"
+          width="32"
+          height="32"
+        />
+        <img src="php.png" alt="php" title="php" width="32" height="32" />
+        <img src="react.png" alt="react" title="react" width="32" height="32" />
+        <img
+          src="reactnative.png"
+          alt="react native"
+          title="react native"
+          width="32"
+          height="32"
+        />
+        <img src="sass.png" alt="sass" title="sass" width="32" height="32" />
+        <img
+          src="typescript.webp"
+          alt="typescript"
+          title="typescript"
+          width="32"
+          height="32"
+        />
+        <img src="vue.png" alt="vue.js" title="vue.js" width="32" height="32" />
       </div>
     </header>
   )
