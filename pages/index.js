@@ -124,22 +124,22 @@ export default function Home() {
                 </p>
               </SliderArticle>
             </SideSlide>
-            {/*<SideSlide leftSlide={true}>
+            <SideSlide leftSlide={true}>
               <SliderArticle
-                title="Xplcity"
-                url="https://xplcity.andriaus.lt"
-                image="/xplcity.png"
-                repo="https://github.com/Voldemortas/xplcity"
+                title="Accounting"
+                url="https://accounting.andriaus.lt"
+                image="/accounting.png"
+                repo="https://github.com/Voldemortas/accounting"
               >
                 <p>
-                  <b>Xplcity</b> was a small project very similar to the
+                  <b>Accounting</b> was a small project very similar to the
                   Warehouse one. The project was coded with VUE. Users can
-                  manage (CRUD) the list of various items and get a bill -
+                  manage (CRUD) the list of various items and get a bill —
                   printable version of the items without the "add/delete" type
                   buttons.
                 </p>
               </SliderArticle>
-            </SideSlide>*/}
+            </SideSlide>
             <SideSlide leftSlide={true}>
               <SliderArticle
                 title="Advent of Code"
