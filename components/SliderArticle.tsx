@@ -24,7 +24,7 @@ const SliderArticle = ({ title, url, children, image, repo }: properties) => {
             />
           </>
         ) : (
-          <video autoPlay={true} loop muted playsInline>
+          <video autoPlay={true} loop muted playsInline width="320">
             <source
               src={`${image.match(/(.+)\.gif$/)[1]}.webm`}
               type="video/webm"
