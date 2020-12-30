@@ -12,9 +12,10 @@ export default async (req, res) => {
         console.log(`stderr: ${stderr}`)
       }
       console.log(`stdout: ${stdout}`)
+
+      res.statusCode = 200
+      res.json({ duration: new Date().getTime() - now })
     })
-    res.statusCode = 200
-    res.json({ duration: new Date().getTime() - now })
   } else if (req.method === 'GET') {
     res.send(await readFileSync('./pages/api/deploy.log', 'utf-8'))
   } else {
