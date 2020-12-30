@@ -74,11 +74,7 @@ export default function Home() {
                   <b>NFQ academy</b> was an academy that lasted for 3 months.
                   This academy was more intense than the previous one. And even
                   though main focus was on the Symfony framework we had
-                  exercises on various topics like git. One of the homeworks was
-                  to{' '}
-                  <a href="https://github.com/Voldemortas/NFQ-GIT/network">
-                    recreate given image with branching and merging
-                  </a>
+                  exercises on various topics like git.
                 </p>
                 <p>
                   The academy included the group project with 2-3 back enders, 1
@@ -93,7 +89,7 @@ export default function Home() {
             <SideSlide leftSlide={true}>
               <SliderArticle
                 title="ActiveGen"
-                url="https://activegen.projektai.nfqakademija.lt"
+                url="http://activegen.projektai.nfqakademija.lt"
                 image="/activegen.gif"
                 repo="https://github.com/nfqakademija/activegen"
               >
@@ -128,7 +124,7 @@ export default function Home() {
                 </p>
               </SliderArticle>
             </SideSlide>
-            <SideSlide leftSlide={true}>
+            {/*<SideSlide leftSlide={true}>
               <SliderArticle
                 title="Xplcity"
                 url="https://xplcity.andriaus.lt"
@@ -143,7 +139,7 @@ export default function Home() {
                   buttons.
                 </p>
               </SliderArticle>
-            </SideSlide>
+            </SideSlide>*/}
             <SideSlide leftSlide={true}>
               <SliderArticle
                 title="Advent of Code"
