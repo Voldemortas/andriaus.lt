@@ -140,7 +140,7 @@ export default function Home() {
                 </p>
               </SliderArticle>
             </SideSlide>
-            <SideSlide leftSlide={true}>
+            {/*<SideSlide leftSlide={true}>
               <SliderArticle
                 title="Advent of Code"
                 image="/AoC.webp"
@@ -157,7 +157,7 @@ export default function Home() {
                   .
                 </p>
               </SliderArticle>
-            </SideSlide>
+            </SideSlide>*/}
             <SideSlide leftSlide={true}>
               <SliderArticle
                 title="mortas bot"
