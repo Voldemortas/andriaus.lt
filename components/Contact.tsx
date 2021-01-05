@@ -43,8 +43,8 @@ const SliderArticle = () => {
           </a>
         </li>
         <li>
-          <a href="/CV.pdf">
-            <FaScroll /> Curriculum Vitae
+          <a href="/AndriusSimanaitisResume.pdf">
+            <FaScroll /> Resume
           </a>
         </li>
       </ul>
