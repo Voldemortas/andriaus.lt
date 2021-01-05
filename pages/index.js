@@ -4,6 +4,7 @@ import SideSlide from '../components/SideSlide'
 import SliderArticle from '../components/SliderArticle'
 import Contact from '../components/Contact'
 import Milestone from '../components/Milestone'
+import { execFile } from 'child_process'
 
 export default function Home() {
   return (
@@ -208,4 +209,13 @@ export default function Home() {
       </div>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  const ip =
+    context.req.headers['x-real-ip'] || context.req.connection.remoteAddress
+  execFile('./visit.sh', [ip.split('.').length === 1 ? ip : ip.split('.')[3]])
+  return {
+    props: {},
+  }
 }
