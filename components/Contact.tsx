@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedin, FaGithub, FaEnvelope, FaScroll } from 'react-icons/fa'
+import {FaLinkedin, FaGithub, FaEnvelope, FaScroll} from 'react-icons/fa'
 
 const SliderArticle = () => {
   return (
@@ -78,6 +78,7 @@ const SliderArticle = () => {
           height="32"
         />
         <img src="vue.png" alt="vue.js" title="vue.js" width="32" height="32" />
+        <img src="java.png" alt="java" title="java" width="32" height="32" />
       </div>
     </header>
   )
