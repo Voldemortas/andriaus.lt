@@ -26,6 +26,14 @@ export default function Home() {
           <section>
             <h1>Career Milestones</h1>
             <SideSlide leftSlide={false}>
+              <Milestone title="Atvira karta">
+                <p>
+                  <b>Atvira Karta</b> is my current workplace. I started my 3 months internship at <b>Atvira Karta</b> in February 2021. 
+                  Then in June 2021 I got offered the job and since then, I've been working there.
+                </p>
+              </Milestone>
+            </SideSlide>
+            <SideSlide leftSlide={false}>
               <Milestone title="Marijampolės Miesto Menu">
                 <p>
                   <b>Marijampolės Miesto Menu</b> was a project dedicated to my
@@ -34,7 +42,7 @@ export default function Home() {
                   <a href="https://www.linkedin.com/in/matas-kaminskas-b8477aa6/">
                     Matas Kaminskas
                   </a>
-                  ,
+                  {', '}
                   <a href="https://www.linkedin.com/in/tadas-%C5%BEaliauskas/">
                     Tadas Žaliauskas
                   </a>{' '}
