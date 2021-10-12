@@ -4,7 +4,7 @@ import SideSlide from '../components/SideSlide'
 import SliderArticle from '../components/SliderArticle'
 import Contact from '../components/Contact'
 import Milestone from '../components/Milestone'
-import { execFile } from 'child_process'
+import {execFile} from 'child_process'
 
 export default function Home() {
   return (
@@ -28,9 +28,13 @@ export default function Home() {
             <SideSlide leftSlide={false}>
               <Milestone title="Atvira karta">
                 <p>
-                  <b>Atvira Karta</b> is my current workplace. I started my 3 months internship at <b>Atvira Karta</b> in February 2021. 
-                  Then in June 2021 I got offered the job and since then, I've been working there.
+                  <b>Atvira Karta</b> is my current workplace. I started my 3
+                  months internship at <b>Atvira Karta</b> in February 2021.
+                  Then in June 2021 I got offered the job and since then, I've
+                  been working there. At my job I have do full-stack things with
+                  front-end having the main focus.
                 </p>
+                <p>Technologies in use: React, Java.</p>
               </Milestone>
             </SideSlide>
             <SideSlide leftSlide={false}>
@@ -92,7 +96,7 @@ export default function Home() {
               </Milestone>
             </SideSlide>
           </section>
-          <hr style={{ width: '100%' }} />
+          <hr style={{width: '100%'}} />
           <section>
             <h1>My projects</h1>
             <SideSlide leftSlide={true}>
