@@ -26,13 +26,28 @@ export default function Home() {
           <section>
             <h1>Career Milestones</h1>
             <SideSlide leftSlide={false}>
+              <Milestone title="KAYAK">
+                <p>
+                  <b>KAYAK</b> is my current workplace. I've been working here
+                  for over two years starting with the December 2021 as an
+                  intern and then become a full fledged software engineer in
+                  April 2022. I was working in the SEO departament but the name
+                  might be misleading as the main focus on the job was rather
+                  introducing new features and functionalities for various
+                  pages.
+                </p>
+                <p>Technologies in use: React, Java.</p>
+              </Milestone>
+            </SideSlide>
+            <SideSlide leftSlide={false}>
               <Milestone title="Atvira karta">
                 <p>
-                  <b>Atvira Karta</b> is my current workplace. I started my 3
+                  <b>Atvira Karta</b> was my first workplace. I started my 3
                   months internship at <b>Atvira Karta</b> in February 2021.
-                  Then in June 2021 I got offered the job and since then, I've
-                  been working there. At my job I have do full-stack things with
-                  front-end having the main focus.
+                  Then in June 2021 I got offered the job and worked there until
+                  December 2021 when I got a better offer from KAYAK. At the job
+                  I was doing full-stack things with front-end being as the main
+                  focus.
                 </p>
                 <p>Technologies in use: React, Java.</p>
               </Milestone>
@@ -57,10 +72,10 @@ export default function Home() {
                   like Facebook Graph API or scrapping the website of the local
                   cinema as well as making and mainining the UI for the data so
                   we could manually fix the possible errors. <br />
-                  The project has been discontinued, however, you can still
-                  download it from{' '}
-                  <a href="https://play.google.com/store/apps/details?id=com.miesto.meniu.app&hl=lt&gl=US">
-                    Google Play
+                  The project has been discontinued, since but you can still
+                  check it on on the{' '}
+                  <a href="https://web.archive.org/web/20210117202636/https://play.google.com/store/apps/details?id=com.miesto.meniu.app&hl=lt&gl=US">
+                    Google Play (web archive)
                   </a>
                   .
                 </p>
@@ -101,8 +116,29 @@ export default function Home() {
             <h1>My projects</h1>
             <SideSlide leftSlide={true}>
               <SliderArticle
+                title="Kalbynas.lt"
+                url="https://kalbynas.lt"
+                image="/kalbynas.webp"
+                repo="https://github.com/Voldemortas/kalbynas"
+              >
+                <p>
+                  <b>Kalbynas.lt</b> is a website that is still being built.
+                  Since one of my hobbies are linguistics (namely Baltistics) I
+                  want to build a coincise website that will cover various
+                  topics like Lithuanian (and Latvian to a lesser extent)
+                  dialectology as well as the historical and comparative
+                  Baltistics. <br />
+                  The project is being run via <a href="https://bun.sh/">
+                    Bun
+                  </a>{' '}
+                  (alternative to Node) to check how it could compares.
+                </p>
+              </SliderArticle>
+            </SideSlide>
+            <SideSlide leftSlide={true}>
+              <SliderArticle
                 title="ActiveGen"
-                url="http://activegen.projektai.nfqakademija.lt"
+                // url="http://activegen.projektai.nfqakademija.lt"
                 image="/activegen.gif"
                 repo="https://github.com/nfqakademija/activegen"
               >
@@ -199,7 +235,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </p>
-                <p>
+                {/* <p>
                   You can either join my discord server (the link below) and
                   test it out or use the{' '}
                   <a href="https://discordapp.com/oauth2/authorize?client_id=673301008075456542&scope=bot&permissions=67584">
@@ -207,6 +243,10 @@ export default function Home() {
                   </a>{' '}
                   to invite it to your own server. The project was made with the
                   help of <a href="https://discord.js.org/">discord.js</a>.
+                </p> */}
+                <p>
+                  Since the Discord has changed how the bots work, the project
+                  is to be revived.
                 </p>
               </SliderArticle>
             </SideSlide>
