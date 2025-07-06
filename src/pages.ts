@@ -16,7 +16,7 @@ const config: PageType<ReactType | RedirectType | BackType>[] = [
     path: '/favicon.ico',
     resolve: {
       type: 'redirect',
-      path: '/static/punkim.png',
+      path: '/static/favicon.png',
     },
     params: [],
   },
