@@ -3,6 +3,8 @@ import renderReact from 'back/pages/common/renderReact'
 import getUrl from 'back/pages/common/getUrl'
 import IS_PROD from 'back/pages/common/isProd.ts'
 import {getConfigVars} from 'back/common/getConfigVar.ts'
+import logVisit from 'back/utils/logVisit.ts'
+import FourOFour from 'back/common/fourOFour.ts'
 
 const lastUpdated = new Date().getTime().toString()
 const {HASH, PORT, HOSTNAME} = getConfigVars()
@@ -32,7 +34,7 @@ const server = Bun.serve({
     if (/^\/front\//.test(pathname)) {
       return serveStatic(request)
     }
-
+    await logVisit(request, server)
     for (const page of pages) {
       if (page.path === pathname) {
         if (page.resolve.type === 'redirect') {
@@ -113,10 +115,6 @@ function getCacheDuration(request: Request) {
     return MONTH
   }
   return 0
-}
-
-async function FourOFour(request?: string) {
-  return new Response(null, {status: 404, statusText: 'Not found'})
 }
 
 console.log(`Listening on ${server.url}`)

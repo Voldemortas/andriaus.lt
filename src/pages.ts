@@ -1,5 +1,6 @@
 import getUrl from 'back/pages/common/getUrl'
-import IndexBack from './back/pages/index/index'
+import deployPage from 'back/pages/deployPage.ts'
+import emptyResolver from 'back/common/emptyResolver.ts'
 
 const config: PageType<ReactType | RedirectType | BackType>[] = [
   {
@@ -7,7 +8,7 @@ const config: PageType<ReactType | RedirectType | BackType>[] = [
     resolve: {
       type: 'react',
       path: 'front/index/index.ts',
-      resolver: IndexBack,
+      resolver: emptyResolver,
     },
     params: [],
   },
@@ -19,14 +20,14 @@ const config: PageType<ReactType | RedirectType | BackType>[] = [
     },
     params: [],
   },
-  // {
-  //   path: '/api/test',
-  //   resolve: {
-  //     type: 'back',
-  //     resolver: ApiTest,
-  //   },
-  //   params: ['hello world!'],
-  // },
+  {
+    path: '/deploy',
+    resolve: {
+      type: 'back',
+      resolver: deployPage,
+    },
+    params: [],
+  },
 ]
 
 export function getPage(
@@ -40,6 +41,8 @@ export function getPage(
   )[0]
 }
 
+type OptionalPromise<T> = T | Promise<T>
+
 export type PageType<T> = {
   path: string
   resolve: T
@@ -49,7 +52,7 @@ export type PageType<T> = {
 export type ReactType = {
   type: 'react'
   path: string
-  resolver: (request: Request, params: string[]) => Object
+  resolver: (request: Request, params: string[]) => OptionalPromise<Object>
 }
 
 export type RedirectType = {
@@ -59,7 +62,7 @@ export type RedirectType = {
 
 export type BackType = {
   type: 'back'
-  resolver: (request: Request, params: string[]) => Response
+  resolver: (request: Request, params: string[]) => OptionalPromise<Response>
 }
 
 export default config
