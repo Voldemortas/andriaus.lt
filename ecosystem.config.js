@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'Placeholder',
+  name: 'Andriaus.lt',
   script: 'out/server.js',
   interpreter: 'bun',
   env: { NODE_ENV: 'production' },
