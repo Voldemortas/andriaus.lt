@@ -1,0 +1,48 @@
+{
+  "name": "bun-react-server-2",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.3",
+    "@happy-dom/global-registrator": "^15.11.7",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/bun": "^1.2.17",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@types/sass": "^1.45.0",
+    "prettier": "^3.6.0",
+    "sass": "^1.89.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "bun": "^1.2.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "build-prod": "NODE_ENV=production bun run build",
+    "build": "bun run build.ts",
+    "watch": "bun run watch.ts",
+    "serve": "bun run src/back/server.ts",
+    "serve-prod": "NODE_ENV=production bun run out/server.js",
+    "serve-pm2": "bunx --bun pm2 start",
+    "prettify": "bunx prettier `git diff HEAD --name-only --diff-filter d`  --write"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

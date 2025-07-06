@@ -1,0 +1,20 @@
+@use '../variables.scss' as variables;
+
+.container {
+  display: flex;
+}
+
+.main {
+  $navWidthWithBorder: variables.$nav-width + 1px;
+  width: calc(100% - $navWidthWithBorder);
+  text-align: center;
+  overflow-y: auto;
+
+  @media (width <= variables.$mobile-breakpoint) {
+    width: 100%;
+  }
+
+  @media (width > variables.$mobile-breakpoint) {
+    border-top: 1px solid var(--color-green-2);
+  }
+}
