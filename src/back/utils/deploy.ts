@@ -7,6 +7,11 @@ export default async function deploy() {
     await $`echo '${getTimestamp()} pull: ${pull.stderr.toString()}' >> logs/deploy.log`.nothrow().quiet()
     return pull
   }
+  const install = await $`bun install`.nothrow().quiet()
+  if (install.stderr) {
+    await $`echo '${getTimestamp()} install: ${install.stderr.toString()}' >> logs/deploy.log`.nothrow().quiet()
+    return pull
+  }
   const build = await $`bun run build-prod`.nothrow().quiet()
   if (pull.stderr) {
     await $`echo '${getTimestamp()} build: ${build.stderr.toString()}' >> logs/deploy.log`.nothrow().quiet()
