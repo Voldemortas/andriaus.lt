@@ -29,6 +29,9 @@ const server = Bun.serve({
     const {pathname} = getUrl(request)
 
     if (/^\/static\//.test(pathname)) {
+      if(pathname === '/static/AndriusSimanaitisResume.pdf') {
+        await logVisit(request, server)
+      }
       return serveStatic(request)
     }
     if (/^\/front\//.test(pathname)) {
