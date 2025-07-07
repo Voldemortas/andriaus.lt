@@ -15,11 +15,11 @@ export default function Home() {
             <SideSlide leftSlide={false}>
               <Milestone title="KAYAK">
                 <p>
-                  <b>KAYAK</b> is my current workplace. I've been working here
-                  for over two years starting with the December 2021 as an
-                  intern and then become a full fledged software engineer in
-                  April 2022. I was working in the SEO departament but the name
-                  might be misleading as the main focus on the job was rather
+                  <b>KAYAK</b> was my last workplace. I was working there for
+                  over two years starting with the December 2021 as an intern
+                  and then become a full fledged software engineer in April
+                  2022. I was working in the SEO departament but the name might
+                  be misleading as the main focus on the job was rather
                   introducing new features and functionalities for various
                   pages.
                 </p>
@@ -116,8 +116,8 @@ export default function Home() {
                   dialectology as well as the historical and comparative
                   Baltistics. <br />
                   The project is being run via <a href="https://bun.sh/">
-                  Bun
-                </a>{' '}
+                    Bun
+                  </a>{' '}
                   (alternative to Node) to check how it could compares.
                 </p>
               </SliderArticle>
@@ -153,7 +153,7 @@ export default function Home() {
                   <b>Warehouse</b> is a small project that tries to simulate
                   warehouse/eshop administration side. The project has no back
                   end and uses localstorage to store all the data. Although,
-                  there is no real database/back end, the proeject still makes
+                  there is no real database/back end, the project still makes
                   pseudo API calls to simulated database and not-instant
                   response times. The project uses React together with
                   Typescript.
@@ -249,4 +249,3 @@ export default function Home() {
     </div>
   )
 }
-

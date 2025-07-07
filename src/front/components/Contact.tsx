@@ -14,8 +14,12 @@ const SliderArticle = () => {
           (express.js), sql, nosql (mongoDb), my current passion is Frontend.
         </p>
         <p>
-          In my free time I love learning about language I have even written a
-          Discord bot which helps learners of Lithuanian on daily basis.
+          In my free time I love learning about languages and I am super proud
+          of my latest project <a href="https://en.kalbynas.lt">Kalbynas.lt</a>{' '}
+          - it has a multilingual support, covers various baltistic related
+          topics and is using my own written framework for{' '}
+          <a href="https://bun.sh">bun runtime</a> with my own full stack
+          solution.
         </p>
       </article>
       <br />
@@ -52,7 +56,13 @@ const SliderArticle = () => {
         Technologies I have worked with:
         <br />
         <br />
-        <img src="/static/git.png" alt="git" title="git" width="32" height="32" />
+        <img
+          src="/static/git.png"
+          alt="git"
+          title="git"
+          width="32"
+          height="32"
+        />
         <img
           src="/static/javascript.png"
           alt="javascript"
@@ -60,8 +70,20 @@ const SliderArticle = () => {
           width="32"
           height="32"
         />
-        <img src="/static/php.png" alt="php" title="php" width="32" height="32" />
-        <img src="/static/react.png" alt="react" title="react" width="32" height="32" />
+        <img
+          src="/static/php.png"
+          alt="php"
+          title="php"
+          width="32"
+          height="32"
+        />
+        <img
+          src="/static/react.png"
+          alt="react"
+          title="react"
+          width="32"
+          height="32"
+        />
         <img
           src="/static/reactnative.png"
           alt="react native"
@@ -69,7 +91,13 @@ const SliderArticle = () => {
           width="32"
           height="32"
         />
-        <img src="/static/sass.png" alt="sass" title="sass" width="32" height="32" />
+        <img
+          src="/static/sass.png"
+          alt="sass"
+          title="sass"
+          width="32"
+          height="32"
+        />
         <img
           src="/static/typescript.png"
           alt="typescript"
@@ -77,8 +105,20 @@ const SliderArticle = () => {
           width="32"
           height="32"
         />
-        <img src="/static/vue.png" alt="vue.js" title="vue.js" width="32" height="32" />
-        <img src="/static/java.png" alt="java" title="java" width="32" height="32" />
+        <img
+          src="/static/vue.png"
+          alt="vue.js"
+          title="vue.js"
+          width="32"
+          height="32"
+        />
+        <img
+          src="/static/java.png"
+          alt="java"
+          title="java"
+          width="32"
+          height="32"
+        />
       </div>
     </header>
   )
