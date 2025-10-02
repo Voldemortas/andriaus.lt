@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaLinkedin, FaGithub, FaEnvelope, FaScroll} from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope, FaScroll } from 'react-icons/fa'
 
 const SliderArticle = () => {
   return (
@@ -42,8 +42,8 @@ const SliderArticle = () => {
           </a>
         </li>
         <li>
-          <a href="mailto:eragonas5@gmail.com">
-            <FaEnvelope className="hideable-icon" /> eragonas5@gmail.com
+          <a href="mailto:labas@andriaus.lt">
+            <FaEnvelope className="hideable-icon" /> labas@andriaus.lt
           </a>
         </li>
         <li>
