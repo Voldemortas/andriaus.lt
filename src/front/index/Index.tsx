@@ -13,9 +13,19 @@ export default function Home() {
           <section>
             <h1>Career Milestones</h1>
             <SideSlide leftSlide={false}>
+              <Milestone title="Mikroautobusų nuoma">
+                <p>
+                  <b>Mikroauotobusų nuoma</b> is my current workplace. The main
+                  focus of this job is creating new Wordpress websites and
+                  taking care of the old ones with the main focus on SEO.
+                </p>
+                <p>Technologies in use: Wordpress.</p>
+              </Milestone>
+            </SideSlide>
+            <SideSlide leftSlide={false}>
               <Milestone title="KAYAK">
                 <p>
-                  <b>KAYAK</b> was my last workplace. I was working there for
+                  <b>KAYAK</b> was my second workplace. I was working there for
                   over two years starting with the December 2021 as an intern
                   and then become a full fledged software engineer in April
                   2022. I was working in the SEO departament but the name might
@@ -98,7 +108,7 @@ export default function Home() {
               </Milestone>
             </SideSlide>
           </section>
-          <hr style={{width: '100%'}} />
+          <hr style={{ width: '100%' }} />
           <section>
             <h1>My projects</h1>
             <SideSlide leftSlide={true}>
@@ -183,10 +193,10 @@ export default function Home() {
                 repo="https://github.com/Voldemortas/advent2020"
               >
                 <p>
-                  <b>Advent of Code</b> an annual fun coding challanges event
-                  that lasts from December 1st to the Christmass. The challanges
+                  <b>Advent of Code</b> an annual fun coding challenges event
+                  that lasts from December 1st to the Christmass. The challenges
                   are easy in the very beginning, however, they get more
-                  challanging as days go on. You can check out the challanges on{' '}
+                  challanging as days go on. You can check out the challenges on{' '}
                   <a href="https://adventofcode.com/2020">
                     Advent of Code website
                   </a>
