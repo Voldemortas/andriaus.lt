@@ -13,6 +13,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@types/sass": "^1.45.0",
+    "@voldemortas/babysit": "npm:@jsr/voldemortas__babysit@^0.0.2",
     "prettier": "^3.6.0",
     "sass": "^1.89.2"
   },
@@ -31,6 +32,7 @@
     "watch": "bun run watch.ts",
     "serve": "bun run src/back/server.ts",
     "serve-prod": "NODE_ENV=production bun run out/server.js",
+    "serve-babysit": "bun babysit.ts",
     "serve-pm2": "bunx --bun pm2 start",
     "prettify": "bunx prettier `git diff HEAD --name-only --diff-filter d`  --write"
   },
