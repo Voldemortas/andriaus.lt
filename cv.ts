@@ -1,6 +1,5 @@
 import {$} from 'bun'
 import generateHTML from 'src/cv/index.tsx'
-import type {Language} from 'src/cv/dictionary.ts'
 
 const CV_DIR = `${import.meta.dir}/src/cv`
 const STATIC_DIR = `${import.meta.dir}/src/static`
@@ -18,7 +17,12 @@ chromium \
   --headless \
   --print-to-pdf=${STATIC_DIR}/en.pdf \
   --disable-print-preview \
-  "$page"`
+  --no-sandbox \
+  "$page"`.catch((e) => {
+    console.error(e)
+    console.log(`Run \x1b[1;33msudo apt install chromium\x1b[0m to install it`)
+    process.exit(1)
+  })
 
   await $`page="file://${CV_DIR}/lt.html"
 
@@ -26,6 +30,7 @@ chromium \
   --headless \
   --print-to-pdf=${STATIC_DIR}/lt.pdf \
   --disable-print-preview \
+  --no-sandbox \
   "$page"`
 }
 
