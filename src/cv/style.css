@@ -1,0 +1,142 @@
+@media print {
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1200px;
+    text-align: center;
+}
+
+main {
+    text-align: left;
+    margin: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: calc(100px * 2 / 3);
+
+    & > .face-row {
+        flex: 3;
+        & > img {
+            border-radius: 50%;
+            width: 200px;
+        }
+    }
+    & > .name-row,.contact-row {
+        flex: 4;
+        padding-top: calc(100px / 6);
+    }
+}
+
+.content {
+    break-after: page;
+}
+
+.name {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.contact-row > * {
+    padding-bottom: 0.5ex;
+    font-size: 20px;
+}
+
+.space {
+    margin-left: 0.25em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.external {
+    position: relative;
+    &::after {
+        position: absolute;
+        border-bottom: 1px solid currentColor;
+        content: '';
+        top: 2.5ex;
+        left: 0;
+        width: 100%;
+    }
+}
+
+h2 {
+    border-bottom: 2px dashed #a0a0a0;
+    padding-bottom: 0.5ex;
+}
+
+h3 {
+    margin: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2ex;
+    width: 100%;
+}
+
+.row:has(.column) {
+    gap: 40px;
+}
+
+.info, .date {
+    color: #777;
+}
+
+.note {
+    font-size: smaller;
+}
+
+.icon[data-img]::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    right: 0.25em;
+    position: relative;
+}
+
+.icon[data-img="phone"]::before {
+    background: url('phone.svg') center / contain no-repeat;
+}
+
+.icon[data-img="letter"]::before {
+    background: url('letter.svg') center / contain no-repeat;
+}
+
+.icon[data-img="cursor"]::before {
+    background: url('cursor.svg') center / contain no-repeat;
+}
+
+.icon[data-img="map"]::before {
+    background: url('map.svg') center / contain no-repeat;
+}
+
+.icon[data-img="square"]::before {
+    background: url('square.svg') center / contain no-repeat;
+}
+
+.icon[data-img="external"]::before {
+    background: url('external.svg') center / contain no-repeat;
+}

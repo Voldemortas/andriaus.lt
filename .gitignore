@@ -177,3 +177,8 @@ dist
 /prod
 /temp
 .babysit
+
+/src/cv/*.html
+/src/cv/*.pdf
+/src/static/en.pdf
+/src/static/lt.pdf
