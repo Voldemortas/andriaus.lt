@@ -15,9 +15,9 @@ export default function Home() {
             <SideSlide leftSlide={false}>
               <Milestone title="Mikroautobusų nuoma">
                 <p>
-                  <b>Mikroauotobusų nuoma</b> is my current workplace. The main
-                  focus of this job is creating new Wordpress websites and
-                  taking care of the old ones with the main focus on SEO.
+                  <b>Mikroauotobusų nuoma</b>. The main focus of this job was
+                  creating new Wordpress websites and taking care of the old
+                  ones with the main focus on SEO.
                 </p>
                 <p>Technologies in use: Wordpress.</p>
               </Milestone>
